@@ -1,0 +1,14 @@
+{
+  "name": "hello-cypress",
+  "version": "1.0.0",
+  "description": "Cypress env",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "author": "vemu",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.1.0"
+  }
+}
