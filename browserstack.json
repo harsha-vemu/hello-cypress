@@ -1,0 +1,32 @@
+{
+    "auth": {
+        "username": "REPLACE_BROWSERSTACK_USERNAME",
+        "access_key": "REPLACE_BROWSERSTACK_KEY"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest",
+                "latest-1"
+            ]
+        },
+        {
+            "browser": "firefox",
+            "os": "Windows 10",
+            "versions": [
+                "latest",
+                "latest-1"
+            ]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "./cypress.json",
+        "project_name": "hello-cypress",
+        "build_name": "Test Automation",
+        "exclude": [],
+        "parallels": "5"
+    },
+    "disable_usage_reporting": false
+}
