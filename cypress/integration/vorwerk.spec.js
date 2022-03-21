@@ -1,6 +1,7 @@
 describe('Vorwerk Regresstion Tests', function () {
     it('Selects Country', function () {
         cy.visit('https://www.vorwerk.com')
+        cy.get('#onetrust-accept-btn-handler').click() // Accept Cookies
         cy.get('select').select('Germany').should('have.value', '1');
         cy.get('select').select('Germany'); // Select DE
         cy.get('.country-selector__button').click()
@@ -8,7 +9,7 @@ describe('Vorwerk Regresstion Tests', function () {
     })
 
     it('Adds Thermomix product to Cart', function () {
-        cy.get('#onetrust-accept-btn-handler').click() // Accept Cookies
+        // cy.get('#onetrust-accept-btn-handler').click() // Accept Cookies
         cy.contains('Produkte').click() // Click Products menu
         cy.contains('Thermomix® TM6').click() // Select TM6®
         cy.scrollTo(0, 500) // Scroll the window 500px down
