@@ -8,4 +8,4 @@ test:
     # install dependencies
     - npm ci
     # run Cypress tests
-    - npm run cy:run:ch
+    - cy:run:record
