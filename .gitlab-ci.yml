@@ -8,7 +8,7 @@ test:
     # install dependencies
     - npm ci
     # run Cypress tests
-    - cypress run --record --key 0ba5e4b5-980b-48ae-b296-fb2da0f39eb3
+    - npx cypress run --record --parallel --browser chrome
   artifacts:
     when: always
     paths:
