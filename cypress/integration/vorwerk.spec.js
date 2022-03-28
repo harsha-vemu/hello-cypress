@@ -18,7 +18,7 @@ describe('Vorwerk Regresstion Tests', function () {
 
     it('Fills advisor form & goto Checkout', function() {
         cy.get('#onetrust-accept-btn-handler').click() // Accept Cookies
-        // cy.contains('Accept All Cookies').click() // Accept Cookies
+        cy.contains('Accept All Cookies').click() // Accept Cookies
         cy.get('#advisorsearch-first-name').type('Hilde');
         cy.get('#advisorsearch-last-name').type('Holzer');
         cy.get('#advisorsearch-street').type('Brahmsallee');

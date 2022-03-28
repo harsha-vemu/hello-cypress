@@ -4,7 +4,12 @@
   "description": "Cypress env",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
+    "cy:version": "cypress version",
+    "cy:info": "cypress info",
+    "cy:run:record": "cypress run --record --key 0ba5e4b5-980b-48ae-b296-fb2da0f39eb3"
   },
   "author": "vemu",
   "license": "ISC",
