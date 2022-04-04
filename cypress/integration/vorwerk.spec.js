@@ -9,12 +9,11 @@ describe('Vorwerk Regresstion Tests', function () {
 
     it('Adds TM6 to Cart & Fill advisor Form', function () {
         cy.url().should('eq', 'https://www.vorwerk.com/de/de/c/home') // Land at Vorwerk DE page
-        cy.get('#onetrust-accept-btn-handler').click() // Accept Cookies
 
         cy.contains('Produkte').click() // Click Products menu
         cy.contains('Thermomix® TM6').click() // Select TM6®
 
-        // cy.get('#onetrust-accept-btn-handler').click() // Accept Cookies
+        cy.get('#onetrust-accept-btn-handler').click() // Accept Cookies
         cy.contains('In den Warenkorb').click() // Add to Cart
 
 
