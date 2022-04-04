@@ -7,8 +7,10 @@ test:
   script:
     # install dependencies
     - npm ci
-    # run Cypress tests
+    # Run & Record Cypress tests (DASHBOARD)
     - npx cypress run --record --parallel --browser chrome --key 0ba5e4b5-980b-48ae-b296-fb2da0f39eb3
+    # Automate tests in Browserstack
+    - browserstack-cypress run --sync
   artifacts:
     when: always
     paths:
